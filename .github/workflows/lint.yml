@@ -2,12 +2,12 @@ name: lean-actions
 on:
     pull_request:
 jobs:
-    hello-job:
+    lint-job:
         runs-on: ubuntu-latest
         steps:
             - name: checkout
               uses: actions/checkout@v4
             - uses: xt0rted/markdownlint-problem-matcher@v3
             - run: npm install
-            - run: markdownlint **/*.md --ignore node_modules
-            - run: textlint **/*.md
+            - run: npm run markdownlint
+            - run: npm run textlint
