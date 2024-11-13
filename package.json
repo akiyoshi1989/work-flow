@@ -4,7 +4,8 @@
   "description": "GitHubActions練習用リポジトリ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "textlint **/*.md"
   },
   "author": "",
   "license": "ISC",
