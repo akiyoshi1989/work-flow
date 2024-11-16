@@ -10,5 +10,6 @@ jobs:
             - name: checkout repository
               uses: actions/checkout@v4
             - name: install markdownlint-cli
-              run: npm install markdownlint-cli \
-                && npm run markdownlint
+              run: npm install markdownlint-cli
+            - name: exec lint
+              run: npm run markdownlint
