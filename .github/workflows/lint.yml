@@ -5,8 +5,10 @@ jobs:
     lint-job:
         runs-on: ubuntu-latest
         steps:
-            - name: checkout
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+            - name: checkout repository
               uses: actions/checkout@v4
-            - uses: actions/setup-node@v4
-            - run: npm install markdownlint-cli
-            - run: npm run markdownlint
+            - name: install markdownlint-cli
+              run: npm install markdownlint-cli \
+                && npm run markdownlint
