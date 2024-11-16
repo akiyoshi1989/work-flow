@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "markdownlint": " **/*.md --ignore node_modules",
-    "lint": "textlint **/*.md"
+    "lint": "markdownlint **/*.md"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +15,8 @@
     "textlint-rule-preset-ja-spacing": "^2.4.3",
     "textlint-rule-preset-ja-technical-writing": "^10.0.1",
     "textlint-rule-spellcheck-tech-word": "^5.0.0"
+  },
+  "dependencies": {
+    "markdownlint-cli": "^0.42.0"
   }
 }

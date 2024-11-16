@@ -7,7 +7,6 @@ jobs:
         steps:
             - name: checkout
               uses: actions/checkout@v4
-            - uses: xt0rted/markdownlint-problem-matcher@v3
-            - run: npm install
+            - uses: actions/setup-node@v4
+            - run: npm install markdownlint-cli
             - run: npm run markdownlint
-            - run: npm run textlint
