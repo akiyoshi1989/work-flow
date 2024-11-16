@@ -9,7 +9,11 @@ jobs:
               uses: actions/setup-node@v4
             - name: checkout repository
               uses: actions/checkout@v4
-            - name: install markdownlint-cli
-              run: npm install markdownlint-cli
-            - name: exec lint
+            - name: install markdownlint-cli2
+              run: npm install markdownlint-cli2
+            - name: exec mdlint
               run: npm run markdownlint
+            - name: install textlint
+              run: npm install textlint textlint-rule-no-todo textlint-rule-preset-ja-spacing textlint-rule-preset-ja-technical-writing textlint-rule-spellcheck-tech-word
+            - name: exec textlint
+              run: npm run textlint
