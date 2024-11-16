@@ -12,4 +12,4 @@ jobs:
             - name: install lint
               run: npm install textlint textlint-rule-no-todo textlint-rule-preset-ja-spacing textlint-rule-preset-ja-technical-writing textlint-rule-spellcheck-tech-word markdownlint-cli2
             - name: exec lint
-              run: npm run markdownlint
+              run: npm run lint

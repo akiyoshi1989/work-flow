@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "markdownlint **/*.md; textlint **/*.md",
-    "markdownlint": "markdownlint **/*.md",
-    "textlint": "textlint **/*.md"
-
+    "lint": "markdownlint **/*.md; textlint **/*.md"
   },
   "author": "",
   "license": "ISC"
