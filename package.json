@@ -8,5 +8,12 @@
     "lint": "markdownlint-cli2 **/*.md; textlint **/*.md"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "markdownlint-cli2": "^0.15.0",
+    "textlint": "^14.3.0",
+    "textlint-rule-no-todo": "^2.0.1",
+    "textlint-rule-preset-ja-spacing": "^2.4.3",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1"
+  }
 }

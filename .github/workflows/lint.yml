@@ -1,15 +1,15 @@
 name: lean-actions
 on:
-    pull_request:
+  pull_request:
 jobs:
-    lint-job:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Set up Node.js
-              uses: actions/setup-node@v4
-            - name: checkout repository
-              uses: actions/checkout@v4
-            - name: install lint
-              run: npm install textlint textlint-rule-no-todo textlint-rule-preset-ja-spacing textlint-rule-preset-ja-technical-writing textlint-rule-spellcheck-tech-word markdownlint-cli2
-            - name: exec lint
-              run: npm run lint
+  lint-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+      - name: checkout repository
+        uses: actions/checkout@v3
+      - name: install lint
+        run: npm install
+      - name: exec lint
+        run: npm run lint
